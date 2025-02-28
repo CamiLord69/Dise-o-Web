@@ -2,11 +2,6 @@ const dropZone = document.getElementById('DropZone')
 const fileList = document.getElementById('fileList')
 
 //evita el comportamiento predeterminado de abrior el archivo en el navegador
-['dragenter','dragover','dragleave','drop'].forEach(eventName => {
-
-    dropZone.addEventListener(eventName,preventDefaults, false);
-    
-});
 
 function preventDefaults(e){
 
@@ -14,6 +9,12 @@ function preventDefaults(e){
     e.stopPropagation();
 
 }
+
+['dragenter','dragover','dragleave','drop'].forEach(eventName => {
+
+    dropZone.addEventListener(eventName,preventDefaults, false);
+    
+});
 
 //cambiar el estilo del area de drop al arrastrar 
 
@@ -44,7 +45,7 @@ function handleDrop(e){
 //mostrar los archivos subidos
 function handleFiles(files){
 
-    fileList.innerHTML='';
+    //fileList.innerHTML='';
     [...files].forEach(file => {
 
         const li = document.createElement('li');
