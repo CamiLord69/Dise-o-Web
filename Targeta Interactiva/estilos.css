@@ -1,0 +1,116 @@
+body {
+
+    font-family: 'Arial', sans-serif;
+    background-color: #01161E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #EFF6E0;
+
+}
+
+.container {
+
+    display: flex;
+    gap: 40px
+
+}
+
+.card {
+
+    width: 350px;
+    background: #AEC3B0;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+
+.card:hover {
+
+    transform: scale(1.05);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+
+}
+
+.card img {
+
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.card-content {
+
+    padding: 20px;
+    text-align: center;
+
+}
+
+.card-title {
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+
+}
+
+.card-description {
+
+    font-size: 1rem;
+    color: #000000;
+
+}
+
+.customizable{
+
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out, font-family 0.3s ease-in-out;
+
+}
+
+form{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.controls {
+
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.controls input, .controls select {
+
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+.controls button {
+
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+}
+
+.controls button:hover {
+
+    background-color: #0056b3;
+
+}
